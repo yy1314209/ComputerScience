@@ -1,0 +1,5 @@
+MO top NULL top.v vlg6F/top.bin 1490866318
+MO reg_file NULL reg_file.v vlg69/reg__file.bin 1490866318
+MO control NULL control.v vlg61/control.bin 1490866318
+MO ram NULL ../RAM1/ipcore_dir/ram.v vlg74/ram.bin 1490866318
+MO alu NULL alu.v vlg0A/alu.bin 1490866318
