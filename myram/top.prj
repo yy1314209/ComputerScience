@@ -1,0 +1,5 @@
+verilog work "../RAM1/ipcore_dir/ram.v"
+verilog work "reg_file.v"
+verilog work "control.v"
+verilog work "alu.v"
+verilog work "top.v"
