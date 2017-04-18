@@ -1,0 +1,495 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml reg_file.twx reg_file.ncd -o reg_file.twr reg_file.pcf
+
+Design file:              reg_file.ncd
+Physical constraint file: reg_file.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+r3_addr<0>  |   10.504(R)|   -1.897(R)|clk_BUFGP         |   0.000|
+r3_addr<1>  |    8.686(R)|   -0.950(R)|clk_BUFGP         |   0.000|
+r3_addr<2>  |    9.562(R)|   -1.078(R)|clk_BUFGP         |   0.000|
+r3_addr<3>  |    9.743(R)|   -1.693(R)|clk_BUFGP         |   0.000|
+r3_addr<4>  |   10.069(R)|   -1.568(R)|clk_BUFGP         |   0.000|
+r3_din<0>   |    2.456(R)|    0.460(R)|clk_BUFGP         |   0.000|
+r3_din<1>   |    2.811(R)|    0.521(R)|clk_BUFGP         |   0.000|
+r3_din<2>   |    2.889(R)|   -0.223(R)|clk_BUFGP         |   0.000|
+r3_din<3>   |    2.071(R)|    0.917(R)|clk_BUFGP         |   0.000|
+r3_din<4>   |    2.560(R)|    0.271(R)|clk_BUFGP         |   0.000|
+r3_din<5>   |    2.674(R)|    0.431(R)|clk_BUFGP         |   0.000|
+r3_din<6>   |    1.348(R)|    1.266(R)|clk_BUFGP         |   0.000|
+r3_din<7>   |    2.370(R)|    0.169(R)|clk_BUFGP         |   0.000|
+r3_din<8>   |    2.855(R)|   -0.027(R)|clk_BUFGP         |   0.000|
+r3_din<9>   |    2.597(R)|    0.171(R)|clk_BUFGP         |   0.000|
+r3_din<10>  |    3.195(R)|   -0.433(R)|clk_BUFGP         |   0.000|
+r3_din<11>  |    3.038(R)|   -0.111(R)|clk_BUFGP         |   0.000|
+r3_din<12>  |    3.664(R)|   -0.353(R)|clk_BUFGP         |   0.000|
+r3_din<13>  |    2.977(R)|   -0.120(R)|clk_BUFGP         |   0.000|
+r3_din<14>  |    3.524(R)|   -0.179(R)|clk_BUFGP         |   0.000|
+r3_din<15>  |    2.209(R)|    0.307(R)|clk_BUFGP         |   0.000|
+r3_din<16>  |    2.166(R)|    0.473(R)|clk_BUFGP         |   0.000|
+r3_din<17>  |    2.417(R)|    0.439(R)|clk_BUFGP         |   0.000|
+r3_din<18>  |    1.938(R)|    0.561(R)|clk_BUFGP         |   0.000|
+r3_din<19>  |    1.846(R)|    0.751(R)|clk_BUFGP         |   0.000|
+r3_din<20>  |    2.998(R)|    0.134(R)|clk_BUFGP         |   0.000|
+r3_din<21>  |    3.150(R)|   -0.229(R)|clk_BUFGP         |   0.000|
+r3_din<22>  |    2.132(R)|    0.285(R)|clk_BUFGP         |   0.000|
+r3_din<23>  |    2.154(R)|    0.314(R)|clk_BUFGP         |   0.000|
+r3_din<24>  |    2.553(R)|    0.330(R)|clk_BUFGP         |   0.000|
+r3_din<25>  |    2.790(R)|    0.790(R)|clk_BUFGP         |   0.000|
+r3_din<26>  |    1.980(R)|    0.579(R)|clk_BUFGP         |   0.000|
+r3_din<27>  |    1.730(R)|    0.581(R)|clk_BUFGP         |   0.000|
+r3_din<28>  |    3.233(R)|    0.267(R)|clk_BUFGP         |   0.000|
+r3_din<29>  |    3.526(R)|   -0.691(R)|clk_BUFGP         |   0.000|
+r3_din<30>  |    1.383(R)|    1.246(R)|clk_BUFGP         |   0.000|
+r3_din<31>  |    1.300(R)|    1.336(R)|clk_BUFGP         |   0.000|
+r3_wr       |   10.371(R)|   -2.352(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+r1_dout<0>  |   12.152(R)|clk_BUFGP         |   0.000|
+r1_dout<1>  |   11.539(R)|clk_BUFGP         |   0.000|
+r1_dout<2>  |   11.526(R)|clk_BUFGP         |   0.000|
+r1_dout<3>  |   11.177(R)|clk_BUFGP         |   0.000|
+r1_dout<4>  |   12.129(R)|clk_BUFGP         |   0.000|
+r1_dout<5>  |   11.672(R)|clk_BUFGP         |   0.000|
+r1_dout<6>  |   12.403(R)|clk_BUFGP         |   0.000|
+r1_dout<7>  |   11.767(R)|clk_BUFGP         |   0.000|
+r1_dout<8>  |   12.132(R)|clk_BUFGP         |   0.000|
+r1_dout<9>  |   11.983(R)|clk_BUFGP         |   0.000|
+r1_dout<10> |   11.832(R)|clk_BUFGP         |   0.000|
+r1_dout<11> |   11.749(R)|clk_BUFGP         |   0.000|
+r1_dout<12> |   11.666(R)|clk_BUFGP         |   0.000|
+r1_dout<13> |   11.813(R)|clk_BUFGP         |   0.000|
+r1_dout<14> |   13.329(R)|clk_BUFGP         |   0.000|
+r1_dout<15> |   12.590(R)|clk_BUFGP         |   0.000|
+r1_dout<16> |   12.245(R)|clk_BUFGP         |   0.000|
+r1_dout<17> |   11.773(R)|clk_BUFGP         |   0.000|
+r1_dout<18> |   12.408(R)|clk_BUFGP         |   0.000|
+r1_dout<19> |   11.869(R)|clk_BUFGP         |   0.000|
+r1_dout<20> |   11.303(R)|clk_BUFGP         |   0.000|
+r1_dout<21> |   13.398(R)|clk_BUFGP         |   0.000|
+r1_dout<22> |   12.829(R)|clk_BUFGP         |   0.000|
+r1_dout<23> |   13.239(R)|clk_BUFGP         |   0.000|
+r1_dout<24> |   12.506(R)|clk_BUFGP         |   0.000|
+r1_dout<25> |   12.473(R)|clk_BUFGP         |   0.000|
+r1_dout<26> |   13.709(R)|clk_BUFGP         |   0.000|
+r1_dout<27> |   13.196(R)|clk_BUFGP         |   0.000|
+r1_dout<28> |   14.009(R)|clk_BUFGP         |   0.000|
+r1_dout<29> |   13.896(R)|clk_BUFGP         |   0.000|
+r1_dout<30> |   12.990(R)|clk_BUFGP         |   0.000|
+r1_dout<31> |   13.497(R)|clk_BUFGP         |   0.000|
+r2_dout<0>  |   12.554(R)|clk_BUFGP         |   0.000|
+r2_dout<1>  |   12.810(R)|clk_BUFGP         |   0.000|
+r2_dout<2>  |   11.969(R)|clk_BUFGP         |   0.000|
+r2_dout<3>  |   12.132(R)|clk_BUFGP         |   0.000|
+r2_dout<4>  |   11.869(R)|clk_BUFGP         |   0.000|
+r2_dout<5>  |   12.074(R)|clk_BUFGP         |   0.000|
+r2_dout<6>  |   11.374(R)|clk_BUFGP         |   0.000|
+r2_dout<7>  |   11.252(R)|clk_BUFGP         |   0.000|
+r2_dout<8>  |   11.588(R)|clk_BUFGP         |   0.000|
+r2_dout<9>  |   12.140(R)|clk_BUFGP         |   0.000|
+r2_dout<10> |   12.684(R)|clk_BUFGP         |   0.000|
+r2_dout<11> |   12.212(R)|clk_BUFGP         |   0.000|
+r2_dout<12> |   12.711(R)|clk_BUFGP         |   0.000|
+r2_dout<13> |   13.088(R)|clk_BUFGP         |   0.000|
+r2_dout<14> |   12.119(R)|clk_BUFGP         |   0.000|
+r2_dout<15> |   13.017(R)|clk_BUFGP         |   0.000|
+r2_dout<16> |   12.190(R)|clk_BUFGP         |   0.000|
+r2_dout<17> |   11.728(R)|clk_BUFGP         |   0.000|
+r2_dout<18> |   11.350(R)|clk_BUFGP         |   0.000|
+r2_dout<19> |   11.085(R)|clk_BUFGP         |   0.000|
+r2_dout<20> |   12.835(R)|clk_BUFGP         |   0.000|
+r2_dout<21> |   12.859(R)|clk_BUFGP         |   0.000|
+r2_dout<22> |   12.128(R)|clk_BUFGP         |   0.000|
+r2_dout<23> |   13.123(R)|clk_BUFGP         |   0.000|
+r2_dout<24> |   12.115(R)|clk_BUFGP         |   0.000|
+r2_dout<25> |   11.705(R)|clk_BUFGP         |   0.000|
+r2_dout<26> |   12.199(R)|clk_BUFGP         |   0.000|
+r2_dout<27> |   13.189(R)|clk_BUFGP         |   0.000|
+r2_dout<28> |   14.347(R)|clk_BUFGP         |   0.000|
+r2_dout<29> |   12.818(R)|clk_BUFGP         |   0.000|
+r2_dout<30> |   12.387(R)|clk_BUFGP         |   0.000|
+r2_dout<31> |   11.064(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+r1_addr<0>     |r1_dout<0>     |   10.755|
+r1_addr<0>     |r1_dout<1>     |   12.300|
+r1_addr<0>     |r1_dout<2>     |   10.665|
+r1_addr<0>     |r1_dout<3>     |   12.336|
+r1_addr<0>     |r1_dout<4>     |   12.563|
+r1_addr<0>     |r1_dout<5>     |   11.347|
+r1_addr<0>     |r1_dout<6>     |   11.632|
+r1_addr<0>     |r1_dout<7>     |   11.466|
+r1_addr<0>     |r1_dout<8>     |   12.207|
+r1_addr<0>     |r1_dout<9>     |   12.314|
+r1_addr<0>     |r1_dout<10>    |   11.783|
+r1_addr<0>     |r1_dout<11>    |   11.771|
+r1_addr<0>     |r1_dout<12>    |   12.059|
+r1_addr<0>     |r1_dout<13>    |   11.679|
+r1_addr<0>     |r1_dout<14>    |   13.415|
+r1_addr<0>     |r1_dout<15>    |   12.749|
+r1_addr<0>     |r1_dout<16>    |   12.056|
+r1_addr<0>     |r1_dout<17>    |   13.078|
+r1_addr<0>     |r1_dout<18>    |   12.495|
+r1_addr<0>     |r1_dout<19>    |   12.245|
+r1_addr<0>     |r1_dout<20>    |   11.191|
+r1_addr<0>     |r1_dout<21>    |   13.595|
+r1_addr<0>     |r1_dout<22>    |   13.376|
+r1_addr<0>     |r1_dout<23>    |   13.099|
+r1_addr<0>     |r1_dout<24>    |   12.731|
+r1_addr<0>     |r1_dout<25>    |   13.170|
+r1_addr<0>     |r1_dout<26>    |   14.297|
+r1_addr<0>     |r1_dout<27>    |   13.715|
+r1_addr<0>     |r1_dout<28>    |   13.485|
+r1_addr<0>     |r1_dout<29>    |   13.543|
+r1_addr<0>     |r1_dout<30>    |   14.060|
+r1_addr<0>     |r1_dout<31>    |   13.310|
+r1_addr<1>     |r1_dout<0>     |    9.717|
+r1_addr<1>     |r1_dout<1>     |   10.886|
+r1_addr<1>     |r1_dout<2>     |    9.534|
+r1_addr<1>     |r1_dout<3>     |    9.692|
+r1_addr<1>     |r1_dout<4>     |   13.410|
+r1_addr<1>     |r1_dout<5>     |   13.341|
+r1_addr<1>     |r1_dout<6>     |   15.490|
+r1_addr<1>     |r1_dout<7>     |   15.766|
+r1_addr<1>     |r1_dout<8>     |   13.104|
+r1_addr<1>     |r1_dout<9>     |   12.395|
+r1_addr<1>     |r1_dout<10>    |   10.808|
+r1_addr<1>     |r1_dout<11>    |   11.120|
+r1_addr<1>     |r1_dout<12>    |   10.846|
+r1_addr<1>     |r1_dout<13>    |   10.779|
+r1_addr<1>     |r1_dout<14>    |   13.626|
+r1_addr<1>     |r1_dout<15>    |   13.350|
+r1_addr<1>     |r1_dout<16>    |   12.724|
+r1_addr<1>     |r1_dout<17>    |   13.675|
+r1_addr<1>     |r1_dout<18>    |   14.902|
+r1_addr<1>     |r1_dout<19>    |   14.770|
+r1_addr<1>     |r1_dout<20>    |   11.990|
+r1_addr<1>     |r1_dout<21>    |   15.310|
+r1_addr<1>     |r1_dout<22>    |   14.195|
+r1_addr<1>     |r1_dout<23>    |   16.357|
+r1_addr<1>     |r1_dout<24>    |   15.889|
+r1_addr<1>     |r1_dout<25>    |   15.619|
+r1_addr<1>     |r1_dout<26>    |   17.551|
+r1_addr<1>     |r1_dout<27>    |   16.833|
+r1_addr<1>     |r1_dout<28>    |   17.135|
+r1_addr<1>     |r1_dout<29>    |   17.471|
+r1_addr<1>     |r1_dout<30>    |   17.780|
+r1_addr<1>     |r1_dout<31>    |   17.297|
+r1_addr<2>     |r1_dout<0>     |    9.190|
+r1_addr<2>     |r1_dout<1>     |    9.039|
+r1_addr<2>     |r1_dout<2>     |    9.388|
+r1_addr<2>     |r1_dout<3>     |    9.310|
+r1_addr<2>     |r1_dout<4>     |   12.861|
+r1_addr<2>     |r1_dout<5>     |   12.999|
+r1_addr<2>     |r1_dout<6>     |   10.760|
+r1_addr<2>     |r1_dout<7>     |   11.052|
+r1_addr<2>     |r1_dout<8>     |   12.558|
+r1_addr<2>     |r1_dout<9>     |   12.474|
+r1_addr<2>     |r1_dout<10>    |    9.730|
+r1_addr<2>     |r1_dout<11>    |    9.993|
+r1_addr<2>     |r1_dout<12>    |   10.074|
+r1_addr<2>     |r1_dout<13>    |    9.688|
+r1_addr<2>     |r1_dout<14>    |   13.048|
+r1_addr<2>     |r1_dout<15>    |   12.235|
+r1_addr<2>     |r1_dout<16>    |   11.425|
+r1_addr<2>     |r1_dout<17>    |   12.329|
+r1_addr<2>     |r1_dout<18>    |   12.044|
+r1_addr<2>     |r1_dout<19>    |   12.621|
+r1_addr<2>     |r1_dout<20>    |   11.691|
+r1_addr<2>     |r1_dout<21>    |   14.832|
+r1_addr<2>     |r1_dout<22>    |   14.840|
+r1_addr<2>     |r1_dout<23>    |   16.014|
+r1_addr<2>     |r1_dout<24>    |   14.334|
+r1_addr<2>     |r1_dout<25>    |   14.488|
+r1_addr<2>     |r1_dout<26>    |   17.548|
+r1_addr<2>     |r1_dout<27>    |   16.418|
+r1_addr<2>     |r1_dout<28>    |   15.868|
+r1_addr<2>     |r1_dout<29>    |   16.347|
+r1_addr<2>     |r1_dout<30>    |   16.744|
+r1_addr<2>     |r1_dout<31>    |   16.831|
+r1_addr<3>     |r1_dout<0>     |    8.920|
+r1_addr<3>     |r1_dout<1>     |    9.600|
+r1_addr<3>     |r1_dout<2>     |    8.568|
+r1_addr<3>     |r1_dout<3>     |    9.008|
+r1_addr<3>     |r1_dout<4>     |   11.105|
+r1_addr<3>     |r1_dout<5>     |   10.701|
+r1_addr<3>     |r1_dout<6>     |   11.713|
+r1_addr<3>     |r1_dout<7>     |   11.950|
+r1_addr<3>     |r1_dout<8>     |   10.820|
+r1_addr<3>     |r1_dout<9>     |   11.784|
+r1_addr<3>     |r1_dout<10>    |    9.347|
+r1_addr<3>     |r1_dout<11>    |    9.076|
+r1_addr<3>     |r1_dout<12>    |   10.743|
+r1_addr<3>     |r1_dout<13>    |   10.368|
+r1_addr<3>     |r1_dout<14>    |   13.760|
+r1_addr<3>     |r1_dout<15>    |   13.201|
+r1_addr<3>     |r1_dout<16>    |   12.645|
+r1_addr<3>     |r1_dout<17>    |   13.548|
+r1_addr<3>     |r1_dout<18>    |   12.618|
+r1_addr<3>     |r1_dout<19>    |   12.110|
+r1_addr<3>     |r1_dout<20>    |   10.695|
+r1_addr<3>     |r1_dout<21>    |   13.279|
+r1_addr<3>     |r1_dout<22>    |   14.379|
+r1_addr<3>     |r1_dout<23>    |   15.265|
+r1_addr<3>     |r1_dout<24>    |   14.050|
+r1_addr<3>     |r1_dout<25>    |   14.225|
+r1_addr<3>     |r1_dout<26>    |   17.031|
+r1_addr<3>     |r1_dout<27>    |   16.430|
+r1_addr<3>     |r1_dout<28>    |   15.811|
+r1_addr<3>     |r1_dout<29>    |   16.316|
+r1_addr<3>     |r1_dout<30>    |   13.902|
+r1_addr<3>     |r1_dout<31>    |   14.373|
+r1_addr<4>     |r1_dout<0>     |    8.194|
+r1_addr<4>     |r1_dout<1>     |    8.047|
+r1_addr<4>     |r1_dout<2>     |    8.948|
+r1_addr<4>     |r1_dout<3>     |    8.030|
+r1_addr<4>     |r1_dout<4>     |   12.764|
+r1_addr<4>     |r1_dout<5>     |    9.163|
+r1_addr<4>     |r1_dout<6>     |    9.507|
+r1_addr<4>     |r1_dout<7>     |    9.761|
+r1_addr<4>     |r1_dout<8>     |   11.947|
+r1_addr<4>     |r1_dout<9>     |   11.822|
+r1_addr<4>     |r1_dout<10>    |    9.086|
+r1_addr<4>     |r1_dout<11>    |    9.341|
+r1_addr<4>     |r1_dout<12>    |    9.987|
+r1_addr<4>     |r1_dout<13>    |    9.609|
+r1_addr<4>     |r1_dout<14>    |   12.709|
+r1_addr<4>     |r1_dout<15>    |   12.132|
+r1_addr<4>     |r1_dout<16>    |   11.591|
+r1_addr<4>     |r1_dout<17>    |   12.489|
+r1_addr<4>     |r1_dout<18>    |   13.156|
+r1_addr<4>     |r1_dout<19>    |   13.425|
+r1_addr<4>     |r1_dout<20>    |   10.160|
+r1_addr<4>     |r1_dout<21>    |   12.712|
+r1_addr<4>     |r1_dout<22>    |   13.261|
+r1_addr<4>     |r1_dout<23>    |   14.669|
+r1_addr<4>     |r1_dout<24>    |   14.418|
+r1_addr<4>     |r1_dout<25>    |   14.839|
+r1_addr<4>     |r1_dout<26>    |   16.715|
+r1_addr<4>     |r1_dout<27>    |   15.297|
+r1_addr<4>     |r1_dout<28>    |   15.240|
+r1_addr<4>     |r1_dout<29>    |   15.744|
+r1_addr<4>     |r1_dout<30>    |   17.707|
+r1_addr<4>     |r1_dout<31>    |   17.344|
+r2_addr<0>     |r2_dout<0>     |   11.605|
+r2_addr<0>     |r2_dout<1>     |   12.041|
+r2_addr<0>     |r2_dout<2>     |   12.190|
+r2_addr<0>     |r2_dout<3>     |   12.524|
+r2_addr<0>     |r2_dout<4>     |   12.309|
+r2_addr<0>     |r2_dout<5>     |   12.123|
+r2_addr<0>     |r2_dout<6>     |   11.924|
+r2_addr<0>     |r2_dout<7>     |   10.788|
+r2_addr<0>     |r2_dout<8>     |   11.591|
+r2_addr<0>     |r2_dout<9>     |   12.038|
+r2_addr<0>     |r2_dout<10>    |   12.935|
+r2_addr<0>     |r2_dout<11>    |   12.948|
+r2_addr<0>     |r2_dout<12>    |   13.150|
+r2_addr<0>     |r2_dout<13>    |   13.164|
+r2_addr<0>     |r2_dout<14>    |   11.548|
+r2_addr<0>     |r2_dout<15>    |   12.162|
+r2_addr<0>     |r2_dout<16>    |   11.958|
+r2_addr<0>     |r2_dout<17>    |   11.902|
+r2_addr<0>     |r2_dout<18>    |   10.769|
+r2_addr<0>     |r2_dout<19>    |    9.994|
+r2_addr<0>     |r2_dout<20>    |   12.916|
+r2_addr<0>     |r2_dout<21>    |   12.767|
+r2_addr<0>     |r2_dout<22>    |   11.610|
+r2_addr<0>     |r2_dout<23>    |   12.807|
+r2_addr<0>     |r2_dout<24>    |   11.690|
+r2_addr<0>     |r2_dout<25>    |   11.987|
+r2_addr<0>     |r2_dout<26>    |   11.522|
+r2_addr<0>     |r2_dout<27>    |   12.789|
+r2_addr<0>     |r2_dout<28>    |   14.161|
+r2_addr<0>     |r2_dout<29>    |   13.051|
+r2_addr<0>     |r2_dout<30>    |   10.720|
+r2_addr<0>     |r2_dout<31>    |    9.755|
+r2_addr<1>     |r2_dout<0>     |   13.783|
+r2_addr<1>     |r2_dout<1>     |   14.004|
+r2_addr<1>     |r2_dout<2>     |   15.347|
+r2_addr<1>     |r2_dout<3>     |   16.754|
+r2_addr<1>     |r2_dout<4>     |   13.479|
+r2_addr<1>     |r2_dout<5>     |   13.680|
+r2_addr<1>     |r2_dout<6>     |   12.906|
+r2_addr<1>     |r2_dout<7>     |   13.896|
+r2_addr<1>     |r2_dout<8>     |   12.468|
+r2_addr<1>     |r2_dout<9>     |   12.603|
+r2_addr<1>     |r2_dout<10>    |   14.829|
+r2_addr<1>     |r2_dout<11>    |   14.319|
+r2_addr<1>     |r2_dout<12>    |   15.306|
+r2_addr<1>     |r2_dout<13>    |   15.050|
+r2_addr<1>     |r2_dout<14>    |   12.904|
+r2_addr<1>     |r2_dout<15>    |   13.216|
+r2_addr<1>     |r2_dout<16>    |   12.089|
+r2_addr<1>     |r2_dout<17>    |   11.432|
+r2_addr<1>     |r2_dout<18>    |   11.327|
+r2_addr<1>     |r2_dout<19>    |   11.186|
+r2_addr<1>     |r2_dout<20>    |   17.110|
+r2_addr<1>     |r2_dout<21>    |   13.980|
+r2_addr<1>     |r2_dout<22>    |   12.652|
+r2_addr<1>     |r2_dout<23>    |   13.165|
+r2_addr<1>     |r2_dout<24>    |   10.919|
+r2_addr<1>     |r2_dout<25>    |   11.096|
+r2_addr<1>     |r2_dout<26>    |   11.042|
+r2_addr<1>     |r2_dout<27>    |   12.005|
+r2_addr<1>     |r2_dout<28>    |   14.783|
+r2_addr<1>     |r2_dout<29>    |   13.741|
+r2_addr<1>     |r2_dout<30>    |    9.452|
+r2_addr<1>     |r2_dout<31>    |    8.156|
+r2_addr<2>     |r2_dout<0>     |   13.694|
+r2_addr<2>     |r2_dout<1>     |   14.492|
+r2_addr<2>     |r2_dout<2>     |   15.812|
+r2_addr<2>     |r2_dout<3>     |   17.374|
+r2_addr<2>     |r2_dout<4>     |   14.040|
+r2_addr<2>     |r2_dout<5>     |   14.214|
+r2_addr<2>     |r2_dout<6>     |   14.999|
+r2_addr<2>     |r2_dout<7>     |   15.276|
+r2_addr<2>     |r2_dout<8>     |   13.604|
+r2_addr<2>     |r2_dout<9>     |   13.309|
+r2_addr<2>     |r2_dout<10>    |   15.536|
+r2_addr<2>     |r2_dout<11>    |   15.001|
+r2_addr<2>     |r2_dout<12>    |   15.194|
+r2_addr<2>     |r2_dout<13>    |   15.538|
+r2_addr<2>     |r2_dout<14>    |   12.734|
+r2_addr<2>     |r2_dout<15>    |   13.252|
+r2_addr<2>     |r2_dout<16>    |   12.926|
+r2_addr<2>     |r2_dout<17>    |   12.186|
+r2_addr<2>     |r2_dout<18>    |   12.663|
+r2_addr<2>     |r2_dout<19>    |   10.738|
+r2_addr<2>     |r2_dout<20>    |   13.806|
+r2_addr<2>     |r2_dout<21>    |   12.931|
+r2_addr<2>     |r2_dout<22>    |   11.976|
+r2_addr<2>     |r2_dout<23>    |   12.785|
+r2_addr<2>     |r2_dout<24>    |   11.709|
+r2_addr<2>     |r2_dout<25>    |   10.572|
+r2_addr<2>     |r2_dout<26>    |   10.172|
+r2_addr<2>     |r2_dout<27>    |   11.466|
+r2_addr<2>     |r2_dout<28>    |   13.300|
+r2_addr<2>     |r2_dout<29>    |   12.066|
+r2_addr<2>     |r2_dout<30>    |    8.706|
+r2_addr<2>     |r2_dout<31>    |    7.869|
+r2_addr<3>     |r2_dout<0>     |   12.327|
+r2_addr<3>     |r2_dout<1>     |   12.801|
+r2_addr<3>     |r2_dout<2>     |   14.197|
+r2_addr<3>     |r2_dout<3>     |   15.478|
+r2_addr<3>     |r2_dout<4>     |   13.269|
+r2_addr<3>     |r2_dout<5>     |   12.610|
+r2_addr<3>     |r2_dout<6>     |   14.511|
+r2_addr<3>     |r2_dout<7>     |   15.002|
+r2_addr<3>     |r2_dout<8>     |   12.185|
+r2_addr<3>     |r2_dout<9>     |   11.689|
+r2_addr<3>     |r2_dout<10>    |   13.908|
+r2_addr<3>     |r2_dout<11>    |   13.397|
+r2_addr<3>     |r2_dout<12>    |   13.826|
+r2_addr<3>     |r2_dout<13>    |   13.877|
+r2_addr<3>     |r2_dout<14>    |   11.119|
+r2_addr<3>     |r2_dout<15>    |   11.963|
+r2_addr<3>     |r2_dout<16>    |   11.228|
+r2_addr<3>     |r2_dout<17>    |   10.901|
+r2_addr<3>     |r2_dout<18>    |   10.777|
+r2_addr<3>     |r2_dout<19>    |   10.758|
+r2_addr<3>     |r2_dout<20>    |   12.991|
+r2_addr<3>     |r2_dout<21>    |   12.646|
+r2_addr<3>     |r2_dout<22>    |   12.536|
+r2_addr<3>     |r2_dout<23>    |   12.460|
+r2_addr<3>     |r2_dout<24>    |   10.092|
+r2_addr<3>     |r2_dout<25>    |    9.380|
+r2_addr<3>     |r2_dout<26>    |    9.119|
+r2_addr<3>     |r2_dout<27>    |   10.500|
+r2_addr<3>     |r2_dout<28>    |   13.219|
+r2_addr<3>     |r2_dout<29>    |   12.248|
+r2_addr<3>     |r2_dout<30>    |    8.337|
+r2_addr<3>     |r2_dout<31>    |    7.784|
+r2_addr<4>     |r2_dout<0>     |   11.407|
+r2_addr<4>     |r2_dout<1>     |   12.123|
+r2_addr<4>     |r2_dout<2>     |   12.373|
+r2_addr<4>     |r2_dout<3>     |   12.850|
+r2_addr<4>     |r2_dout<4>     |   12.617|
+r2_addr<4>     |r2_dout<5>     |   12.201|
+r2_addr<4>     |r2_dout<6>     |   11.977|
+r2_addr<4>     |r2_dout<7>     |   11.868|
+r2_addr<4>     |r2_dout<8>     |   11.696|
+r2_addr<4>     |r2_dout<9>     |   11.562|
+r2_addr<4>     |r2_dout<10>    |   13.362|
+r2_addr<4>     |r2_dout<11>    |   13.088|
+r2_addr<4>     |r2_dout<12>    |   12.382|
+r2_addr<4>     |r2_dout<13>    |   12.158|
+r2_addr<4>     |r2_dout<14>    |   10.667|
+r2_addr<4>     |r2_dout<15>    |   11.506|
+r2_addr<4>     |r2_dout<16>    |   10.311|
+r2_addr<4>     |r2_dout<17>    |    9.617|
+r2_addr<4>     |r2_dout<18>    |    9.485|
+r2_addr<4>     |r2_dout<19>    |    9.672|
+r2_addr<4>     |r2_dout<20>    |   11.763|
+r2_addr<4>     |r2_dout<21>    |   10.854|
+r2_addr<4>     |r2_dout<22>    |   10.255|
+r2_addr<4>     |r2_dout<23>    |   10.431|
+r2_addr<4>     |r2_dout<24>    |    8.976|
+r2_addr<4>     |r2_dout<25>    |    9.418|
+r2_addr<4>     |r2_dout<26>    |    8.860|
+r2_addr<4>     |r2_dout<27>    |    9.976|
+r2_addr<4>     |r2_dout<28>    |   12.562|
+r2_addr<4>     |r2_dout<29>    |   10.482|
+r2_addr<4>     |r2_dout<30>    |    7.535|
+r2_addr<4>     |r2_dout<31>    |    6.731|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Apr 15 21:36:23 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 214 MB
+
+
+

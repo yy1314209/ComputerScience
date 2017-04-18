@@ -1,0 +1,114 @@
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Top.xst" -ofn "E:/projects/ISE/cpu/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc foot.ucf -p xc3s500e-fg320-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf foot.ucf 

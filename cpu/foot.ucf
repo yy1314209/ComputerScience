@@ -1,0 +1,3 @@
+NET "clk"   LOC = "B8"; # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK, Sch name = GCLK0
+
+NET "rst_n" LOC = "B18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN0

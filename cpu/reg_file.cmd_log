@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/reg_file.xst" -ofn "E:/projects/ISE/cpu/reg_file.syr" 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/reg_file.xst" -ofn "E:/projects/ISE/cpu/reg_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 reg_file.ngc reg_file.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reg_file_map.ncd reg_file.ngd reg_file.pcf 
+par -w -intstyle ise -ol high -t 1 reg_file_map.ncd reg_file.ncd reg_file.pcf 
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/reg_file.xst" -ofn "E:/projects/ISE/cpu/reg_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 reg_file.ngc reg_file.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reg_file_map.ncd reg_file.ngd reg_file.pcf 
+par -w -intstyle ise -ol high -t 1 reg_file_map.ncd reg_file.ncd reg_file.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reg_file.twx reg_file.ncd -o reg_file.twr reg_file.pcf 

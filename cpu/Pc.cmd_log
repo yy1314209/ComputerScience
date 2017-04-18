@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Pc.xst" -ofn "E:/projects/ISE/cpu/Pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 Pc.ngc Pc.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pc_map.ncd Pc.ngd Pc.pcf 
+par -w -intstyle ise -ol high -t 1 Pc_map.ncd Pc.ncd Pc.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Pc.twx Pc.ncd -o Pc.twr Pc.pcf 

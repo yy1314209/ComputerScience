@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/projects/ISE/cpu/Pcplus.xst" -ofn "E:/projects/ISE/cpu/Pcplus.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 Pcplus.ngc Pcplus.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pcplus_map.ncd Pcplus.ngd Pcplus.pcf 
+par -w -intstyle ise -ol high -t 1 Pcplus_map.ncd Pcplus.ncd Pcplus.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Pcplus.twx Pcplus.ncd -o Pcplus.twr Pcplus.pcf 
