@@ -1,0 +1,5 @@
+Makefile用于编译链接文件
+start16.S用于加载操作系统映像到0x7e00处
+start32.S用于初始化栈，清空BSS，并调用main函数
+main.c用于打印hello内容，表明已经进入main
+myOS.ld 和 start16.ld为链接文件
