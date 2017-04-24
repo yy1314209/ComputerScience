@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ThunderCross - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\VR_\AppData\Local\Temp\RSPBDE3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/ThunderCross.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\VR_\Desktop\Opencv教学\教程工程\ThunderCross\EndUI.cpp"
+]
+Creating command line "cl.exe @C:\Users\VR_\AppData\Local\Temp\RSPBDE3.tmp" 
+Creating temporary file "C:\Users\VR_\AppData\Local\Temp\RSPBDE4.tmp" with contents
+[
+cxcore.lib cv.lib ml.lib cvaux.lib highgui.lib cvcam.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ThunderCross.pdb" /debug /machine:I386 /out:"Debug/ThunderCross.exe" /pdbtype:sept 
+".\Debug\AddReward.obj"
+".\Debug\BoomEffect.obj"
+".\Debug\Bullet.obj"
+".\Debug\cBuffReward.obj"
+".\Debug\EndUI.obj"
+".\Debug\EnemyFighterPlane.obj"
+".\Debug\EnemyPlane.obj"
+".\Debug\GameManager.obj"
+".\Debug\GameUI.obj"
+".\Debug\HpBar.obj"
+".\Debug\MyPlane.obj"
+".\Debug\StartUI.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ThunderCross.obj"
+".\Debug\Timer.obj"
+]
+Creating command line "link.exe @C:\Users\VR_\AppData\Local\Temp\RSPBDE4.tmp"
+<h3>Output Window</h3>
+Compiling...
+EndUI.cpp
+Linking...
+Creating temporary file "C:\Users\VR_\AppData\Local\Temp\RSPBF5C.tmp" with contents
+[
+/nologo /o"Debug/ThunderCross.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\AddReward.sbr"
+".\Debug\BoomEffect.sbr"
+".\Debug\Bullet.sbr"
+".\Debug\cBuffReward.sbr"
+".\Debug\EndUI.sbr"
+".\Debug\EnemyFighterPlane.sbr"
+".\Debug\EnemyPlane.sbr"
+".\Debug\GameManager.sbr"
+".\Debug\GameUI.sbr"
+".\Debug\HpBar.sbr"
+".\Debug\MyPlane.sbr"
+".\Debug\StartUI.sbr"
+".\Debug\ThunderCross.sbr"
+".\Debug\Timer.sbr"]
+Creating command line "bscmake.exe @C:\Users\VR_\AppData\Local\Temp\RSPBF5C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ThunderCross.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
